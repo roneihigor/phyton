@@ -30,8 +30,8 @@ resultadofinal = resultadobimestral1 + resultadobimestral2 + resultadobimestral3
 print("a nota total obtida pelo aluno foi: " , resultadofinal)
 
 if (resultadofinal >= 60):
-    print("o aluno está aprovado")
+    print("o aluno está aprovado!")
 elif (resultadofinal< 40):
-    print("o aluno foi reprovado")
+    print("o aluno foi reprovado!")
 elif (resultadofinal < 60 or resultadofinal >= 40):
-    print("o aluno está em recuperação")
+    print("o aluno está em recuperação!")
