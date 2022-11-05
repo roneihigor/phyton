@@ -2,23 +2,16 @@
 # Mostre as consoantes.
 
 lista = [0,0,0,0,0,0,0,0,0,0]
-for i in range(10):
-    lista[10] = input("Digite uma letra para cada posição ")
-
-vogal = input("digite uma vogal para localizar no vetor")
 
 for i in range(10):
-    if (lista[10] == vogal):
-        print("vogal encontrada")
-        vogal = True
-
-if(vogal is False):
-    print("vogal não encontrada!")
-
-
-
+    lista[i] = input("Digite uma letra para a posição " + str(i)+ ": ")
 print(lista)
-print(vogal)
 
+consoante = 0
 
+for i in range(10):
+   if not (lista[i] == str ('a') or lista[i] == str ('e') or lista[i] == str ('i') or lista[i] == str ('o') or lista[i] == str ('u')):
+       print("consoante na posição: " + str(i+1) + ":" , lista[i])
+       consoante=consoante+1
 
+print("a quantidade de consoante é :" , consoante)
